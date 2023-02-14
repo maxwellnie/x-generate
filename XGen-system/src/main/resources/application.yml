@@ -1,5 +1,7 @@
 xgen:
   name: x-gen
+  version: 0.0.build
+  author: Akiba no ichiichiyoha
 spring:
   #数据源配置
   datasource:

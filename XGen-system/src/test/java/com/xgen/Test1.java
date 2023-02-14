@@ -11,6 +11,6 @@ public class Test1 {
     @Test
     public void a(){
         System.out.println(DefaultTypeMapping.getJavaType("longtext").getAddress());
-        System.out.println(AppConfig.name);
+        System.out.println(AppConfig.getVersion());
     }
 }
