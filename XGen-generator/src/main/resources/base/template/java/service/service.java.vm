@@ -1,0 +1,7 @@
+public interface  ${serviceClassName}{
+    Boolean insert(${entityName} ${paramEntityName});
+    Boolean update(${entityName} ${paramEntityName});
+    Boolean delete(${entityId.type} ${entityId.name});
+    List<${entityName}> selectList();
+    ${entityName} selectById(${entityId.type} ${entityId.name});
+}

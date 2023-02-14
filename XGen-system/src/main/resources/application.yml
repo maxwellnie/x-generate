@@ -1,0 +1,16 @@
+xgen:
+  name: x-gen
+spring:
+  #数据源配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3307/xgen?useUnicode=true&characterEncoding=utf8
+    password: root
+    username: 123456
+  #redis配置
+  redis:
+    host: 192.168.200.129
+    port: 6379
+    database: 0
+
