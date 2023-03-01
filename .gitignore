@@ -38,3 +38,4 @@ build/
 .DS_Store
 !**/src/test/java/**
 /XGen-system/src/test/java/com/xgen/Test1.java
+/XGen-common/src/test/java/
