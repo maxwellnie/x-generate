@@ -1,6 +1,7 @@
 package com.xgen.common.mapping;
 
 
+import com.xgen.common.TypeNotMappingException;
 import com.xgen.common.enums.JavaType;
 import com.xgen.common.map.BestMap;
 
@@ -32,8 +33,14 @@ public class DefaultTypeMapping {
      * @param dbType 数据库数据类型
      * @return java数据类型
      */
-    public static JavaType getJavaType(String dbType) {
+    public static JavaType getJavaType(String dbType) throws TypeNotMappingException {
         JavaType javaType=map.get(dbType);
-        return javaType==null?NO_MAPPING:javaType;
+        return requireMappingJavaType(javaType);
+    }
+    private static JavaType requireMappingJavaType(JavaType javaType) throws TypeNotMappingException {
+        if(javaType!=null)
+            return javaType;
+        else
+            throw new TypeNotMappingException();
     }
 }

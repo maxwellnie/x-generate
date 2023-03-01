@@ -28,8 +28,7 @@ public enum JavaType {
     BIG_DECIMAL(BigDecimal.class),
     TIME_STAMP(Timestamp.class),
     DATE(Date.class),
-    TIME(java.sql.Time.class),
-    NO_MAPPING("no mapping");
+    TIME(java.sql.Time.class);
     String typeName;
     String address;
     Boolean notBasic=false;

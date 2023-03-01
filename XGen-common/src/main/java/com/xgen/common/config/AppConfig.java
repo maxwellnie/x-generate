@@ -1,5 +1,4 @@
 package com.xgen.common.config;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 @Component
@@ -8,6 +7,7 @@ public class AppConfig {
     private static String name;
     private static String version;
     private static String author;
+    private static Boolean demonstrate;
 
     public static String getName() {
         return name;
@@ -25,11 +25,26 @@ public class AppConfig {
         AppConfig.name=name;
     }
 
-    public static void setVersion(String version) {
+    public void setVersion(String version) {
         AppConfig.version = version;
     }
 
-    public static void setAuthor(String author) {
+    public void setAuthor(String author) {
         AppConfig.author = author;
+    }
+
+    public static Boolean getDemonstrate() {
+        return demonstrate;
+    }
+
+    public void setDemonstrate(Boolean demonstrate) {
+        AppConfig.demonstrate = demonstrate;
+    }
+
+    public static String appInfo(){
+        return "application:"+name+"\n"
+                +"version:"+version+"\n"
+                +"author:"+author+"\n"
+                +"演示模式:"+demonstrate;
     }
 }

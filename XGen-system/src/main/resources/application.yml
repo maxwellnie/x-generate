@@ -2,6 +2,7 @@ xgen:
   name: x-gen
   version: 0.0.build
   author: Akiba no ichiichiyoha
+  demonstrate: true
 spring:
   #数据源配置
   datasource:
@@ -15,4 +16,5 @@ spring:
     host: 192.168.200.129
     port: 6379
     database: 0
-
+server:
+  port: 9999

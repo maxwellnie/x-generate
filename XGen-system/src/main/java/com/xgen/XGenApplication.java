@@ -6,6 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class XGenApplication {
     public static void main(String[] args) {
-        SpringApplication.run(XGenApplication.class);
+        SpringApplication.run(XGenApplication.class,args);
     }
 }

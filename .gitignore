@@ -30,10 +30,11 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-
+!**/src/test/**
 ### VS Code ###
 .vscode/
 
 ### Mac OS ###
 .DS_Store
 !**/src/test/java/**
+/XGen-system/src/test/java/com/xgen/Test1.java
